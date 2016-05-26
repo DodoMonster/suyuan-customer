@@ -1,0 +1,307 @@
+
+.wrapper{
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 100px;
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px #9c9c9c;
+  border-radius: 10px;
+}
+/*enroll_header-Begin*/
+#enroll_header{
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  z-index: 100;
+}
+
+#enroll_header h1{
+  text-align: center;
+  font-size: 40px;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-put;
+  font-weight: 200;
+}
+
+#enroll_header ul{
+  width: 99.5%;
+  margin: 0 auto;
+  height: 40px;
+  border-bottom:1px solid #FFFAF0;
+
+}
+#enroll_header li{
+  float: left;
+  width: 33%;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.on,#enroll_header li:hover{
+  border-bottom: 3px solid #1d749a;
+}
+/*enroll_header-End*/
+
+
+/*enrollBox-Begin*/
+#enrollBox{
+  max-width: 750px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px;
+  z-index: 100;
+  clear: both;
+}
+
+#enroll_intr h1{
+  font-size:25px;
+  font-weight: 200;
+  padding-left: 50px;
+  padding: 80px;
+  text-align: center;
+  text-indent: 2em;
+}
+
+.enroll_header{
+  margin:10px auto;
+  text-align: center;
+}
+.enroll_header span{
+  color: #1d749a;
+  font-size: 40px;
+  font-weight: bold;
+}
+.register_content{
+  margin:0 auto;
+  margin-bottom: 3px;
+
+}
+
+.register_content p{
+  overflow: hidden;
+  position: relative;
+  clear: both;
+}
+
+
+.register_content label{
+  width:100px;
+  text-align: right;
+  display: inline-block;
+}
+
+.register_content input,.register_content textarea,.register_content select{
+  -webkit-appearance: none;
+   -moz-appearance: none;
+        appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 200px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 5px auto 5px auto;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  transition-duration: 0.25s;
+}
+
+
+
+.register_content select option{
+  background: #50a3a6 ;
+}
+.register_content i{
+  color: red;
+  font-variant: normal;
+  display: inline-block;
+  width: 10px;
+
+}
+.register_content .inputOne:focus{
+  background-color: white;
+  width: 570px;
+  color: #1d749a;
+}
+.register_content input:focus{
+  background-color: white;
+  width: 220px;
+  color: #1d749a;
+}
+.register_content .inputOne{
+  width: 557px;
+}
+.register_content select{
+  width: 232px;
+}
+.register_content .fileBtn{
+  position: relative;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 11.5px 15px;
+  margin: 5px auto;
+  color: #fff;
+  text-decoration: none;
+  text-indent: 0;
+  line-height: 20px;
+}
+.register_content .fileBtn:hover{
+  background-color: #1d749a;
+}
+.register_content #file1,.register_content #file2{
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.btn-p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.register_content button{
+  -webkit-appearance: none;
+   -moz-appearance: none;
+        appearance: none;
+  outline: 0;
+  background-color: #1d749a;
+  border: 0;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 3px;
+  width: 250px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+}
+.btn-p button:hover{
+  background-color: rgba(19, 116, 154, 0.8);
+}
+/*enrollBox-End*/
+
+
+/* 遮罩 */
+/*.lb_overlay{
+  height: 100%;
+  position:absolute;
+  top:-20px;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:99;
+  opacity:0.6;
+  background:black;
+  display:none;
+}*/
+
+/*start 离开提示框 结果提示框*/
+#confirmBox{
+  width: 400px;
+  height: 250px;
+  border:3px solid #ccc;
+  border-radius:5px;
+  text-align: center;
+  z-index: 200;
+  background: #fff;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.resultBox{
+  height: 150px !important;
+}
+
+.confirmBox_header{
+  height: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.confirmBox_header span{
+  font-size: 20px;
+  float: left;
+  margin-left: 10px;
+  line-height: 40px;
+  color: #000;
+}
+
+.confirmBox_header .closeTip{
+  float: right;
+  margin:1px 10px 0 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.confirmBox_content{
+  margin-top:40px;
+}
+
+.confirmBox_content span{
+  color: gray;
+  font-size: 18px;
+  text-align: center;
+}
+
+.confirmBox_footer{
+  margin-top:60px;
+  clear: both;
+}
+.confirmBox_footer button{
+  width: 150px;
+  height: 40px;
+  margin: 0 20px;
+  background: #00bc9b;
+  border-radius:5px;
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #00b091;
+}
+/*错误提示*/
+.error{
+  color: #f00;
+  font-size: 12px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+/* #file1-error，#file2-error{
+   margin-left: -1px ;
+   margin-right: -2px;
+ } */
+ #name-error,#file1-error,#address-error{
+  margin-left: 125px;
+ }
+
+  /*每组label与input*/
+ .input_wrapper{
+   float: left;
+   margin-left: 10px;
+   height: auto;
+   text-align: center;
+   clear: right;
+ }
+
+  /*上传文件*/
+  #upfile1, #upfile2{
+  width:85px;
+  height: 23px;
+  font-size: 12px;
+  vertical-align:bottom;
+ }

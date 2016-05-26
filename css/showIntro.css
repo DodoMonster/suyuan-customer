@@ -1,0 +1,135 @@
+
+a{
+    color: #fff;
+}
+.clear{
+    clear: both;
+    content: ""
+}
+.head .title{
+    color: #fff;
+    margin:30px;
+    font-size:30px;
+    position: relative;
+    top: 20px;
+}
+.head .search_box{
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.head .loginRegister{
+    float: right;
+    font-size: 17px;
+    clear: both;
+    margin-top: -50px;
+    color: #fff;
+}
+.head .loginRegister span{
+    background: #ff7f00;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.head .loginRegister span:hover{
+    background: #ff7f00;
+}
+.head .loginRegister a{
+    color: #fff;
+}
+.goodIntro{
+    width: 800px;
+    margin:0 auto;
+    margin-top:100px;
+    margin-bottom: 30px;
+    padding: 10px;
+    height:600px;
+    color: #fff;
+
+    border-radius: 5px;
+
+}
+.intro{
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 0 10px #ccc;
+    display: none;
+    border: 2px solid #ccc;
+}
+.prodcutionIntro{
+    display: block;
+}
+.introNavBox{
+    position: fixed;
+    width: 200px;
+}
+.introNavBox ul{
+  float:left;
+  color:#fff;
+  /*position:relative;*/
+  /*z-index: 999;*/
+  background:url('../images/shadow.png') no-repeat;
+  padding:60px 0 30px 0;
+  margin-left:20px;
+  border-radius:5px;
+}
+.introNavBox ul li{
+    width:100px;
+    padding:10px 20px 10px 20px;
+    margin-bottom: 10px;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background:#bcbcbc url('../images/border.png') no-repeat ;
+    -webkit-transition:all 0.3s ease-out;
+	-moz-transition:all 0.3s ease-out;
+	-o-transition:all 0.3s ease-out;
+	-webkit-box-shadow:2px 2px 4px #888;
+	-moz-box-shadow:2px 2px 4px #888;
+	-o-box-shadow:2px 2px 4px #888;
+}
+.introNavBox ul li:hover{
+    background: url('../images/border.png') #3d444c no-repeat;
+    color:#fff;
+    padding:10px 20px 10px 50px;
+}
+.introNavBox .on{
+    background: #3d444c;
+    color: #fff;
+    /*margin-right: 50px;*/
+    padding:10px 20px 10px 50px;
+}
+.goodIntro{
+    margin-left: 250px;
+}
+table,tr,th,td{
+    border: 1px solid #ccc;
+    border-collapse:collapse;
+}
+table{
+    width: 800px;
+}
+tr{
+    padding: 10px 20px 10px 20px;
+}
+.tdMenu{
+    width:80px;
+    color: #000;
+    text-align: center;
+}
+td{
+    padding: 10px 20px 10px 20px;
+    word-break: break-all;
+}
+.resultItem{
+    width:100px;
+    color: #000;
+}
+caption{
+    font-size: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+footer{
+	position:relative;
+    margin-top: -20px;
+    clear: both;
+}

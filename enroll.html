@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" register_content="IE=edge,chrome=1">
+  <title>溯源平台注册</title>
+  <link href="public/datetimepicker-master/jquery.datetimepicker.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/enroll.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="public/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="head">
+        <div class="logo">LOGO</div>
+      <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="#" class="loginBtn">登录</a></li>
+            <li><a href="enroll.html" style="border-bottom: 2px solid #fb7f03;">注册</a></li>
+        </ul>
+      </nav>
+      <div class="search_box">
+              <form action="" name="searchForm">
+                  <input type="text" name="tracesource" class="sy_num" placeholder="请输入您的溯源码" />
+                  <input type="button" value="立即追溯" class="sy_btn" onclick="alert('hehe');" />
+              </form>
+      </div>
+    </div>
+  </header>
+  <!-- 注册实体 -->
+  <div class="wrapper">
+  <div id="enroll_header">
+    <h1 >注   册 <i class="fa fa-pencil"></i></h1>
+    <ul>
+      <li>生产商注册</li>
+      <li>分销商注册</li>
+      <li>监管部门注册</li>
+    </ul>
+  </div>
+  <div id="enrollBox">
+    <div id="enroll_intr" class="formDiv">
+      <h1>
+        欢迎注册安全农产品溯源公共服务平台！<br/>
+  			请按照您相应的角色点击相应选项卡把信息<br/>
+  			填写完整后提交注册申请，工作人员会在2-7<br/>
+        个工作日对您的注册请求进行审核，审核<br/>
+  			结果会以邮箱形式进行通知，请在注册后留<br/>
+  			意您的邮箱！安全农产品溯源公共服务平台<br/>
+  			<em style="color:#f00">祝您生活愉快！</em>
+      </h1>
+    </div>
+      <!-- 生产商 -->
+    <form action="" method="post" id="enrollForm0" enctype="multipart/form-data" class="form">
+      <div id="enroll_creater" class="formDiv" style="display:none">
+        <div class="enroll_header">
+          <span>生产商申请</span>
+        </div>
+        <div class="register_content">
+          <p>
+            <div class="input_wrapper">
+              <label for="name" >生产商名称:</label><i class="must">*</i>
+              <input type="text" name="name" id="name" class="required inputOne" >
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="legalPerson">法人:</label><i class="must">*</i>
+              <input type="text" name="legalPerson" class="required">
+            </div>
+            <div class="input_wrapper">
+              <label for="buildDate">成立日期:</label><i class="must">*</i>
+              <input type="text" name="buildDate" id="buildDate1" class="required">
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="type">生产商类型:</label><i class="must">*</i>
+              <select name="type" id="type" class="required" >
+                <option value="">请选择类型</option>
+                <option value="国有企业">国有企业</option>
+                <option value="集体所有制">集体所有制</option>
+                <option value="私营企业">私营企业</option>
+                <option value="股份制企业">股份制企业</option>
+                <option value="联营企业">联营企业</option>
+                <option value="外商投资企业">外商投资企业</option>
+                <option value="港、澳、台">港、澳、台</option>
+                <option value="股份合作企业">股份合作企业</option>
+                <option value="其他">其他</option>
+              </select>
+            </div>
+            <div class="input_wrapper">
+              <label for="nature">生产商性质:</label><i class="must">*</i>
+              <select name="nature" id="nature" class="required">
+                <option value="">请选择性质</option>
+                <option value="国有企业">国有企业</option>
+                <option value="集体企业">集体企业</option>
+                <option value="三资(独资.合资.合作)企业">三资(独资.合资.合作)企业</option>
+                <option value="民营企业">民营企业</option>
+                <option value="其他">其他</option>
+              </select>
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="phone">联系电话:</label><i class="must">*</i>
+              <input type="text" name="phone" id="phone" class="required">
+            </div>
+            <div class="input_wrapper">
+              <label for="email" >邮   箱:</label><i class="must">*</i>
+              <input type="text" name="email" id="email" class="required">
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="province">所在地区:</label><i class="must">*</i>
+              <select name="province" id="province1" class="required" style="width:200px">
+              </select>
+              <select name="city" id="city1" class="required" style="width:200px">
+              </select>
+              <select name="prefecture" id="prefecture1" class="required" style="width:200px">
+              </select>
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="address">详细地址:</label><i class="must">*</i>
+              <input type="text" name="address" id="address" class="required inputOne">
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="website" >企业官网:</label><i class="must">&nbsp;</i>
+              <input type="text" name="website" id="website" placeholder="http://" class="inputOne">
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="registeredFund">注册资金:</label><i class="must">*</i>
+              <input type="text" name="registeredFund" id="registeredFund" class="required">
+              <span style="margin-left:10px;font-size:15px">万元</span>
+            </div>
+            <div class="input_wrapper">
+              <label for="file">营业执照:</label><i class="must">*</i>
+              <input id="upfile1" />
+              <a href="javascript:;" class="fileBtn">
+                <span>上传</span>
+                <input type="file" id="file1" name="licensePic" onchange="inputFile1();" class="required file" accept="image/*"/>
+              </a>
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="comments" style="position:relative;bottom:50px;">介   绍:</label><i class="must">&nbsp;</i>
+              <textarea name="comments" cols="40" rows="3" style="resize:none" id="comments" class="inputOne"></textarea>
+            </div>
+          </p>
+
+          <p class="btn-p" style="clear:both">
+            <button type="submit" class="submit">提交</button>
+          </p>
+          <input type="text" name="isProducer" id="isProducer1" style="display:none"><!-- 判断厂商类型 -->
+        </div>
+      </div>
+    </form>
+
+    <!-- 分销商 -->
+    <form action="" method="post" id="enrollForm1" enctype="multipart/form-data" class="form">
+      <div id="enroll_distributor" style="display:none" class="formDiv">
+        <div class="enroll_header">
+          <span>分销商申请</span>
+        </div>
+        <div class="register_content">
+          <p>
+            <div class="input_wrapper">
+              <label for="name" >生产商名称:</label><i class="must">*</i>
+              <input type="text" name="name" id="name" class="required inputOne" >
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="legalPerson">法人:</label><i class="must">*</i>
+              <input type="text" name="legalPerson" class="required">
+            </div>
+            <div class="input_wrapper">
+              <label for="buildDate">成立日期:</label><i class="must">*</i>
+              <input type="text" name="buildDate" id="buildDate2" class="required">
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="type">分销商类型:</label><i class="must">*</i>
+              <select name="type" id="type" class="required" >
+                <option value="">请选择类型</option>
+                <option value="国有企业">国有企业</option>
+                <option value="集体所有制">集体所有制</option>
+                <option value="私营企业">私营企业</option>
+                <option value="股份制企业">股份制企业</option>
+                <option value="联营企业">联营企业</option>
+                <option value="外商投资企业">外商投资企业</option>
+                <option value="港、澳、台">港、澳、台</option>
+                <option value="股份合作企业">股份合作企业</option>
+                <option value="其他">其他</option>
+              </select>
+            </div>
+            <div class="input_wrapper">
+              <label for="nature">分销商性质:</label><i class="must">*</i>
+              <select name="nature" id="nature" class="required">
+                <option value="">请选择性质</option>
+                <option value="国有企业">国有企业</option>
+                <option value="集体企业">集体企业</option>
+                <option value="三资(独资.合资.合作)企业">三资(独资.合资.合作)企业</option>
+                <option value="民营企业">民营企业</option>
+                <option value="其他">其他</option>
+              </select>
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="phone">联系电话:</label><i class="must">*</i>
+              <input type="text" name="phone" id="phone" class="required">
+            </div>
+            <div class="input_wrapper">
+              <label for="email" >邮   箱:</label><i class="must">*</i>
+              <input type="text" name="email" id="email" class="required">
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="province">所在地区:</label><i class="must">*</i>
+              <select name="province" id="province2" class="required" style="width:200px">
+              </select>
+              <select name="city" id="city2" class="required" style="width:200px">
+              </select>
+              <select name="prefecture" id="prefecture2" class="required" style="width:200px">
+              </select>
+            </div>
+          <p>
+            <div class="input_wrapper">
+              <label for="address">详细地址:</label><i class="must">*</i>
+              <input type="text" name="address" id="address" class="required inputOne">
+            </div>
+          <p>
+            <div class="input_wrapper">
+              <label for="website" >企业官网:</label><i class="must">&nbsp;</i>
+              <input type="text" name="website" id="website" placeholder="http://" class="inputOne">
+            </div>
+          <p>
+            <div class="input_wrapper">
+              <label for="registeredFund">注册资金:</label><i class="must">*</i>
+              <input type="text" name="registeredFund" id="registeredFund" class="required">
+              <span style="margin-left:10px;font-size:15px">万元</span>
+            </div>
+            <div class="input_wrapper">
+              <label for="file">营业执照:</label><i class="must">*</i>
+              <input id="upfile2" />
+              <a href="javascript:;" class="fileBtn">
+                <span>上传</span>
+                <input type="file" id="file2" name="licensePic" onchange="inputFile2();" class="required file" accept="image/*"/>
+              </a>
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="comments" style="position:relative;bottom:50px;">介   绍:</label><i class="must">&nbsp;</i>
+              <textarea name="comments" cols="40" rows="3" style="resize:none" id="comments" class="inputOne"></textarea>
+            </div>
+          </p>
+          <p class="btn-p" style="clear:both">
+            <button type="submit" class="submit">提交</button>
+          </p>
+          <input type="text" name="isProducer" id="isProducer2" style="display:none"><!-- 判断厂商类型 -->
+        </div>
+      </div>
+    </div>
+    </form>
+
+    <!-- 监管部门 -->
+    <form action="" method="post" id="enrollForm2" enctype="multipart/form-data" class="form">
+      <div id="enroll_manager" style="display:none" class="formDiv">
+        <div class="enroll_header">
+          <span>监管部门申请</span>
+        </div>
+        <div class="register_content">
+          <p>
+            <div class="input_wrapper">
+              <label for="name" >部门名称:</label><i class="must">*</i>
+              <input type="text" name="name" id="regulator_name" class="required">
+            </div >
+            <div class="input_wrapper">
+              <label for="buildDate">成立日期:</label><i class="must">*</i>
+              <input type="text" name="buildDate" id="buildDate3" class="required">
+            </div >
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="phone">联系电话:</label><i class="must">*</i>
+              <input type="text" name="phone" id="phone" class="required">
+            </div>
+            <div class="input_wrapper">
+              <label for="email" >邮   箱:</label><i class="must">*</i>
+              <input type="text" name="email" id="email" class="required">
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="province">所在地区:</label><i class="must">*</i>
+              <select name="province" id="province3" class="required" style="width:200px">
+              </select>
+              <select name="city" id="city3" class="required" style="width:200px">
+              </select>
+              <select name="prefecture" id="prefecture3" class="required" style="width:200px">
+              </select>
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="address">详细地址:</label><i class="must">*</i>
+              <input type="text" name="address" id="address" class="required inputOne">
+            </div>
+          </p>
+          <p>
+            <div class="input_wrapper">
+              <label for="conmments" style="position:relative;bottom:50px;">介   绍:</label><i class="must">&nbsp;</i>
+              <textarea name="conmments" cols="40" rows="3" style="resize:none" id="comments" class="inputOne"></textarea>
+            </div>
+          </p>
+          <p class="btn-p" style="clear:both">
+            <button type="submit" class="submit">提   交</button>
+          </p>
+        </div>
+      </div>
+    </form>
+    <!-- 离开确认框  结果显示框-->
+    <div id="confirmBox">
+      <div class="confirmBox_header">
+        <span>注册</span>
+        <span class="closeTip"><i class="fa fa-times" id="closeFrame"></i></span>
+      </div>
+      <div class="confirmBox_content">
+        <i class="fa fa-warning fa-2x" style="color:#00bc9b"></i>
+        <span>确定离开当前页面？</span>
+      </div>
+      <div class="confirmBox_footer">
+          <button>确定</button>
+          <button>取消</button>
+      </div>
+    </div>
+    <!--遮罩层-->
+    <div class="lb_overlay" id="lb_overlay"></div>
+  </div>
+    <!--start 登陆框-->
+    <div class="login_box" id="login_box">
+        <form action="" method="post" id="loginForm">
+          <div class="login_header">
+            <span style="color:#000;">登陆</span>
+            <i class="fa fa-times closeFrame" ></i>
+          </div>
+          <div class="login_content">
+            <span class="backErr_tip"></span>
+            <label for="username"><i class="fa fa-user"></i></label>
+            <input type="text" name="username" id="username" id="username" placeholder="请输入账号"/>
+            <span class="nameErr_tip"></span>
+            <label for="password" ><i class="fa fa-lock"></i></label>
+            <input name="password" type="password" id="password" placeholder="请输入密码"/>
+            <span class="pwdErr_tip"></span>
+            <button type="button" class="login_btn">登陆</button>
+          </div>
+          <div class="login_footer">
+            <span style="margin-right:200px;"><a href="#">忘记密码?</a></span>
+            <span><a href="enroll.html">前往注册</a></span>
+          </div>
+        </form>
+    </div>
+
+  <script type="text/javascript" src="public/jquery.js"></script>
+  <script type="text/javascript" src="public/datetimepicker-master/build/jquery.datetimepicker.full.min.js"></script>
+  <script type="text/javascript" src="js/pickerdate.js"></script>
+  <script type="text/javascript" src="js/enroll.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="public/validation-1.14.0/dist/jquery.validate.js"></script>
+  <script type="text/javascript"src="public/area.js"></script>
+  <script type="text/javascript" src="public/ajaxfileupload.js"></script>
+  <script type="text/javascript">
+    _init_area1();
+    _init_area2();
+    _init_area3();
+  </script>
+</body>
+<footer>
+      <p>技术支持：<a href="" target="_blank" style="color:#fff;clear:both">SCAU知行创客</a></p>
+      <p>电话：xxx-xxx-xxx </p>
+      <p>邮箱: xxx@xxx.com</p>
+      <p>地址：华南农业大学数学与信息学院院楼809</p>
+  </footer>
+</html>
